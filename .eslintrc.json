@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "constructor-super": "off",
+    "getter-return": "off",
+    "no-const-assign": "off",
+    "no-dupe-args": "off",
+    "no-dupe-class-members": "off",
+    "no-dupe-keys": "off",
+    "no-func-assign": "off",
+    "no-import-assign": "off",
+    "no-new-symbol": "off",
+    "no-obj-calls": "off",
+    "no-redeclare": "off",
+    "no-setter-return": "off",
+    "no-this-before-super": "off",
+    "no-undef": "off",
+    "no-unreachable": "off",
+    "no-unsafe-negation": "off",
+    "no-var": "error", // ts transpiles let/const to var, so no need for vars any more
+    "prefer-const": "error", // ts provides better types with const
+    "prefer-rest-params": "error", // ts provides better types with rest args over arguments
+    "prefer-spread": "error", // ts transpiles spread to apply, so no need for manual apply
+    "valid-typeof": "off", // ts(2367)
+    "indent": ["error", 4],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  }
+}
